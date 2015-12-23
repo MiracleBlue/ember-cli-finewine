@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-finewine/components/await-block/component';

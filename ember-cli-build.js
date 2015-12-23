@@ -5,6 +5,15 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
     // Add options here
+    babel: {
+      stage: 0,
+      optional: ['regenerator'],
+      includePolyfill: true
+    },
+    hinting: false,
+    'ember-cli-mocha': {
+      useLintTree: false
+    }
   });
 
   /*
